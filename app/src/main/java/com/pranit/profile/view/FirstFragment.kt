@@ -58,6 +58,7 @@ class FirstFragment : Fragment(){
     }
 
     private fun setDobDatePicker() {
+
         dobPicker.addOnPositiveButtonClickListener {
             selectedDob = it
             btnDOB.text = dobPicker.headerText
@@ -101,6 +102,7 @@ class FirstFragment : Fragment(){
             firstName.isNullOrEmpty() -> return false
             secondName.isNullOrEmpty() -> return false
             selectedDob < 1 -> return false
+            selectedDob > System.currentTimeMillis() -> return false
         }
         return true
     }
