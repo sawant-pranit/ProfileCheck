@@ -1,0 +1,30 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/clBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+            android:id="@+id/flBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_circle_solid"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/flBack"
+            app:layout_constraintEnd_toEndOf="@id/flBack"
+            app:layout_constraintStart_toStartOf="@id/flBack"
+            app:layout_constraintTop_toTopOf="@id/flBack"
+            app:srcCompat="@drawable/ic_back_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
